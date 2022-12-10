@@ -3,4 +3,9 @@
     <string name="window_text">Press the button below to receive a friendly greeting from Android.</string>
     <string name="button_label">Show Greeting</string>
     <string name="greeting_text">Greetings One and All from Android!</string>
+    <string name="button_addTournament">Add Tournament</string>
+    <string name="hint_tournamentTitle">Tournament Title</string>
+    <string name="hint_tournamentOrg">Tournament Organiser</string>
+    <string name="hint_tournamentStartDate">Start Date (dd/mm/yyyy)</string>
+    <string name="hint_tournamentMaxTeams">Max Teams</string>
 </resources>

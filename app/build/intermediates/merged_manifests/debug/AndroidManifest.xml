@@ -22,7 +22,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.TournamentManagerApp" >
         <activity
-            android:name="com.example.tournamentmanagerapp.MainActivity"
+            android:name="com.example.tournamentmanagerapp.activities.TournamentActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

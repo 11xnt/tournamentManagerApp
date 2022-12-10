@@ -35,8 +35,8 @@
 23-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:13:9-58
 24        <activity
 24-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:15:9-27:20
-25            android:name="com.example.tournamentmanagerapp.MainActivity"
-25-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:16:13-41
+25            android:name="com.example.tournamentmanagerapp.activities.TournamentActivity"
+25-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:16:13-58
 26            android:exported="true" >
 26-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:17:13-36
 27            <intent-filter>

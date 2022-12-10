@@ -1,7 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-25:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-25:\\layout\\activity_tournament.xml",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_tournament.xml"
     },
     {
         "merged": "com.example.tournamentmanagerapp-mergeDebugResources-25:/layout/activity_tournament.xml",
