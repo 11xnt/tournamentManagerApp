@@ -30,7 +30,7 @@ public final class ActivityTournamentBinding implements ViewBinding {
   public final Button btnAdd;
 
   @NonNull
-  public final Toolbar toolbarAdd;
+  public final Toolbar toolbarCancel;
 
   @NonNull
   public final EditText tournamentMaxTeams;
@@ -45,13 +45,13 @@ public final class ActivityTournamentBinding implements ViewBinding {
   public final EditText tournamentTitle;
 
   private ActivityTournamentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppBarLayout appBarLayout, @NonNull Button btnAdd, @NonNull Toolbar toolbarAdd,
+      @NonNull AppBarLayout appBarLayout, @NonNull Button btnAdd, @NonNull Toolbar toolbarCancel,
       @NonNull EditText tournamentMaxTeams, @NonNull EditText tournamentOrg,
       @NonNull TextView tournamentStartDate, @NonNull EditText tournamentTitle) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.btnAdd = btnAdd;
-    this.toolbarAdd = toolbarAdd;
+    this.toolbarCancel = toolbarCancel;
     this.tournamentMaxTeams = tournamentMaxTeams;
     this.tournamentOrg = tournamentOrg;
     this.tournamentStartDate = tournamentStartDate;
@@ -97,9 +97,9 @@ public final class ActivityTournamentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbarAdd;
-      Toolbar toolbarAdd = ViewBindings.findChildViewById(rootView, id);
-      if (toolbarAdd == null) {
+      id = R.id.toolbarCancel;
+      Toolbar toolbarCancel = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarCancel == null) {
         break missingId;
       }
 
@@ -128,7 +128,7 @@ public final class ActivityTournamentBinding implements ViewBinding {
       }
 
       return new ActivityTournamentBinding((ConstraintLayout) rootView, appBarLayout, btnAdd,
-          toolbarAdd, tournamentMaxTeams, tournamentOrg, tournamentStartDate, tournamentTitle);
+          toolbarCancel, tournamentMaxTeams, tournamentOrg, tournamentStartDate, tournamentTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

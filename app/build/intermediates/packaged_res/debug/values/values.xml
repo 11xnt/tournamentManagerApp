@@ -14,12 +14,14 @@
     <string name="app_name">tournamentManagerApp</string>
     <string name="button_addTournament">Add Tournament</string>
     <string name="button_label">Show Greeting</string>
+    <string name="cancel">Cancel</string>
     <string name="greeting_text">Greetings One and All from Android!</string>
     <string name="hint_tournamentMaxTeams">Max Teams</string>
     <string name="hint_tournamentOrg">Tournament Organiser</string>
     <string name="hint_tournamentStartDate">Start Date (dd/mm/yyyy)</string>
     <string name="hint_tournamentTitle">Tournament Title</string>
     <string name="list_tours">Tournaments</string>
+    <string name="menu_add_tour">Add</string>
     <string name="window_text">Press the button below to receive a friendly greeting from Android.</string>
     <style name="Theme.TournamentManagerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

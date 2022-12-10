@@ -2753,6 +2753,8 @@ id item1
 id item2
 id item3
 id item4
+id item_add
+id item_cancel
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -2975,7 +2977,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
-id toolbarAdd
+id toolbarCancel
 id top
 id topPanel
 id touch_outside
@@ -3200,6 +3202,8 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu example_menu
 menu example_menu2
+menu menu_cancel
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -3238,6 +3242,7 @@ string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string button_addTournament
 string button_label
+string cancel
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3292,6 +3297,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string menu_add_tour
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
