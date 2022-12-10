@@ -4,7 +4,15 @@
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_tournament.xml"
     },
     {
-        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-25:/layout/activity_tournament.xml",
-        "source": "com.example.tournamentmanagerapp-main-28:/layout/activity_tournament.xml"
+        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-25:/layout/card_tournament.xml",
+        "source": "com.example.tournamentmanagerapp-main-28:/layout/card_tournament.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-25:\\layout\\activity_tournament_list.xml",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_tournament_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-25:\\layout\\card_tournament.xml",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\card_tournament.xml"
     }
 ]

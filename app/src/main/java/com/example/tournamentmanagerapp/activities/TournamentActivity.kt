@@ -4,8 +4,8 @@ import android.app.DatePickerDialog
 import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.CalendarContract.CalendarAlerts
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
+import com.example.tournamentmanagerapp.main.MainApp
 import com.example.tournamentmanagerapp.models.TournamentModel
 import com.github.ajalt.timberkt.Timber
 import com.google.android.material.snackbar.Snackbar
@@ -15,7 +15,7 @@ import timber.log.Timber.i
 class TournamentActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTournamentBinding
     var tournament = TournamentModel()
-    var tournaments = ArrayList<TournamentModel>()
+    lateinit var app : MainApp
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +25,7 @@ class TournamentActivity : AppCompatActivity() {
 
         Timber.plant(Timber.DebugTree())
 
+        app = application as MainApp
         i("Tournament Activity started...")
 
         // Date picker sourced from: https://www.geeksforgeeks.org/datepicker-in-android/
@@ -65,7 +66,10 @@ class TournamentActivity : AppCompatActivity() {
             if (tournament.title.isNotEmpty() && tournament.org.isNotEmpty() && tournament.startDate.isNotEmpty()
                 && tournament.maxTeams > 0) {
                 i("add Button Pressed: $tournament")
-                tournaments.add(tournament.copy())
+                app.tournaments.add(tournament.copy())
+                for (i in app.tournaments.indices) {
+                    i("Tournament[$i]:${this.app.tournaments[i]}")
+                }
             } else {
                 Snackbar
                     .make(it, "Please fill in all fields", Snackbar.LENGTH_LONG)

@@ -2866,6 +2866,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2973,6 +2974,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id toolbarAdd
 id top
 id topPanel
@@ -3104,6 +3106,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_tournament
+layout activity_tournament_list
+layout card_tournament
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3226,6 +3230,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_tour_name
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3251,6 +3256,7 @@ string hint_tournamentTitle
 string icon_content_description
 string item_view_role_description
 string label
+string list_tours
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
 string m3_ref_typeface_plain_medium

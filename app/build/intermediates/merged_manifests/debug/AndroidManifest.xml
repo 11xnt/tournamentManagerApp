@@ -9,6 +9,7 @@
         android:targetSdkVersion="33" />
 
     <application
+        android:name="com.example.tournamentmanagerapp.main.MainApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,7 +23,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.TournamentManagerApp" >
         <activity
-            android:name="com.example.tournamentmanagerapp.activities.TournamentActivity"
+            android:name="com.example.tournamentmanagerapp.activities.TournamentListActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +31,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.tournamentmanagerapp.activities.TournamentActivity"
+            android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

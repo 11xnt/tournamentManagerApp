@@ -20,6 +20,10 @@
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\layout_activity_tournament_list.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_tournament_list.xml"
+    },
+    {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
@@ -44,6 +48,10 @@
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\layout_card_tournament.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\card_tournament.xml"
+    },
+    {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -60,8 +68,8 @@
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_tournament.xml"
     },
     {
-        "merged": "com.example.tournamentmanagerapp-merged_res-26:/layout_activity_tournament.xml.flat",
-        "source": "com.example.tournamentmanagerapp-main-28:/layout/activity_tournament.xml"
+        "merged": "com.example.tournamentmanagerapp-merged_res-26:/layout_card_tournament.xml.flat",
+        "source": "com.example.tournamentmanagerapp-main-28:/layout/card_tournament.xml"
     },
     {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xxhdpi_ic_launcher.webp.flat",
