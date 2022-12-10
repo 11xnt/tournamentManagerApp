@@ -2,6 +2,9 @@
     <string name="app_name">tournamentManagerApp</string>
     <string name="add_tour_name">Add a Tournament</string>
     <string name="list_tours">Tournaments</string>
+
+    <string name="menu_add_tour">Add</string>
+    <string name="cancel">Cancel</string>
     <string name="window_text">Press the button below to receive a friendly greeting from Android.</string>
     <string name="button_label">Show Greeting</string>
     <string name="greeting_text">Greetings One and All from Android!</string>

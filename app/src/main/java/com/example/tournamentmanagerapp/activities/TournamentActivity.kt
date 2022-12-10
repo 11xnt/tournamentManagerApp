@@ -1,9 +1,15 @@
 package com.example.tournamentmanagerapp.activities
 
+import android.app.Activity
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import androidx.activity.result.contract.ActivityResultContracts
+import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
 import com.example.tournamentmanagerapp.main.MainApp
 import com.example.tournamentmanagerapp.models.TournamentModel
@@ -22,6 +28,9 @@ class TournamentActivity : AppCompatActivity() {
 
         binding = ActivityTournamentBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.toolbarCancel.title = title
+        setSupportActionBar(binding.toolbarCancel)
 
         Timber.plant(Timber.DebugTree())
 
@@ -70,6 +79,8 @@ class TournamentActivity : AppCompatActivity() {
                 for (i in app.tournaments.indices) {
                     i("Tournament[$i]:${this.app.tournaments[i]}")
                 }
+                setResult(RESULT_OK)
+                finish()
             } else {
                 Snackbar
                     .make(it, "Please fill in all fields", Snackbar.LENGTH_LONG)
@@ -77,4 +88,20 @@ class TournamentActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_cancel, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    // if cancel button is pressed, finish action and bring back to tournament list
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.item_cancel -> {
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 }

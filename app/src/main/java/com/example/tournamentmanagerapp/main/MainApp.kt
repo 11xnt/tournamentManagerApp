@@ -13,8 +13,8 @@ class MainApp : Application() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
         i("Tournament Manager started")
-        tournaments.add(TournamentModel(0,"Tour1","Org1","22-12-2022",20))
-        tournaments.add(TournamentModel(1,"Tour2","Org2","22-12-2023",10))
-        tournaments.add(TournamentModel(2,"Tour3","Org3","22-12-2024",64))
+//        tournaments.add(TournamentModel(0,"Tour1","Org1","22-12-2022",20))
+//        tournaments.add(TournamentModel(1,"Tour2","Org2","22-12-2023",10))
+//        tournaments.add(TournamentModel(2,"Tour3","Org3","22-12-2024",64))
     }
 }
