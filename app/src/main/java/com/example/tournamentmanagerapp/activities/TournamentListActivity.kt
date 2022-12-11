@@ -29,7 +29,7 @@ class TournamentListActivity : AppCompatActivity() {
 
         val layoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager
-        binding.recyclerView.adapter = TournamentAdapter(app.tournaments)
+        binding.recyclerView.adapter = TournamentAdapter(app.tournaments.findAll())
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -53,7 +53,7 @@ class TournamentListActivity : AppCompatActivity() {
         ) {
             if (it.resultCode == Activity.RESULT_OK) {
                 (binding.recyclerView.adapter)?.
-                notifyItemRangeChanged(0,app.tournaments.size)
+                notifyItemRangeChanged(0,app.tournaments.findAll().size)
             }
         }
 }

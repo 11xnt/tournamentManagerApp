@@ -74,11 +74,8 @@ class TournamentActivity : AppCompatActivity() {
             tournament.maxTeams = Integer.parseInt(binding.tournamentMaxTeams.text.toString())
             if (tournament.title.isNotEmpty() && tournament.org.isNotEmpty() && tournament.startDate.isNotEmpty()
                 && tournament.maxTeams > 0) {
-                i("add Button Pressed: $tournament")
-                app.tournaments.add(tournament.copy())
-                for (i in app.tournaments.indices) {
-                    i("Tournament[$i]:${this.app.tournaments[i]}")
-                }
+
+                app.tournaments.create(tournament.copy())
                 setResult(RESULT_OK)
                 finish()
             } else {
