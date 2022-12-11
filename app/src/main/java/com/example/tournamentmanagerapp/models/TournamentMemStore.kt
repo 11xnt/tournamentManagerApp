@@ -25,7 +25,7 @@ class TournamentMemStore : TournamentStore {
     }
 
     override fun update(tournament: TournamentModel) {
-        var foundTournament = findOne(tournament.id!!)
+        var foundTournament: TournamentModel? = tournaments.find { p -> p.id == tournament.id}
         if (foundTournament != null) {
             foundTournament.title = tournament.title
             foundTournament.org = tournament.org

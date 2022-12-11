@@ -3241,12 +3241,14 @@ int string bottom_sheet_behavior 0x7f0f001f
 int string bottomsheet_action_expand_halfway 0x7f0f0020
 int string button_addTournament 0x7f0f0021
 int string button_label 0x7f0f0022
+int string button_updateTournament 0x7f0f0087
 int string cancel 0x7f0f0023
 int string character_counter_content_description 0x7f0f0024
 int string character_counter_overflowed_content_description 0x7f0f0025
 int string character_counter_pattern 0x7f0f0026
 int string chip_text 0x7f0f0027
 int string clear_text_end_icon_content_description 0x7f0f0028
+int string empty_fields 0x7f0f0088
 int string error_icon_content_description 0x7f0f0029
 int string exposed_dropdown_menu_content_description 0x7f0f002a
 int string fab_transformation_scrim_behavior 0x7f0f002b

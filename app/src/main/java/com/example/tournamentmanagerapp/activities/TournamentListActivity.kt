@@ -51,6 +51,7 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
 
     override fun onTournamentClick(tournament: TournamentModel) {
         val launcherIntent = Intent(this, TournamentActivity::class.java)
+        launcherIntent.putExtra("tournament_edit", tournament)
         getClickResult.launch(launcherIntent)
     }
 
