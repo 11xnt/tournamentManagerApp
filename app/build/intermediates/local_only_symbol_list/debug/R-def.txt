@@ -34,7 +34,9 @@ string add_tour_name
 string app_name
 string button_addTournament
 string button_label
+string button_updateTournament
 string cancel
+string empty_fields
 string greeting_text
 string hint_tournamentMaxTeams
 string hint_tournamentOrg

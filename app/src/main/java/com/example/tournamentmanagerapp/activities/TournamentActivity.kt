@@ -67,6 +67,15 @@ class TournamentActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
+        if (intent.hasExtra("tournament_edit")) {
+            binding.btnAdd.setText(R.string.button_updateTournament)
+            tournament = intent.extras?.getParcelable("tournament_edit")!!
+            binding.tournamentTitle.setText(tournament.title)
+            binding.tournamentOrg.setText(tournament.org)
+            binding.tournamentStartDate.setHint(tournament.startDate)
+            binding.tournamentMaxTeams.setText(tournament.maxTeams.toString())
+        }
+
         binding.btnAdd.setOnClickListener() {
             tournament.title = binding.tournamentTitle.text.toString()
             tournament.org = binding.tournamentOrg.text.toString()
@@ -74,16 +83,17 @@ class TournamentActivity : AppCompatActivity() {
             tournament.maxTeams = Integer.parseInt(binding.tournamentMaxTeams.text.toString())
             if (tournament.title.isNotEmpty() && tournament.org.isNotEmpty() && tournament.startDate.isNotEmpty()
                 && tournament.maxTeams > 0) {
-                i("add Button Pressed: $tournament")
-                app.tournaments.add(tournament.copy())
-                for (i in app.tournaments.indices) {
-                    i("Tournament[$i]:${this.app.tournaments[i]}")
+
+                if (intent.hasExtra("tournament_edit")) {
+                    app.tournaments.update(tournament)
+                } else {
+                    app.tournaments.create(tournament.copy())
                 }
                 setResult(RESULT_OK)
                 finish()
             } else {
                 Snackbar
-                    .make(it, "Please fill in all fields", Snackbar.LENGTH_LONG)
+                    .make(it, getString(R.string.empty_fields), Snackbar.LENGTH_LONG)
                     .show()
             }
         }

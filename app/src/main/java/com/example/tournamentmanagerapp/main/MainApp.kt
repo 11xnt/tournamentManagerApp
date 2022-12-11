@@ -1,13 +1,14 @@
 package com.example.tournamentmanagerapp.main
 
 import android.app.Application
+import com.example.tournamentmanagerapp.models.TournamentMemStore
 import com.example.tournamentmanagerapp.models.TournamentModel
 import timber.log.Timber
 import timber.log.Timber.i
 
 class MainApp : Application() {
 
-    val tournaments = ArrayList<TournamentModel>()
+    val tournaments = TournamentMemStore()
 
     override fun onCreate() {
         super.onCreate()
