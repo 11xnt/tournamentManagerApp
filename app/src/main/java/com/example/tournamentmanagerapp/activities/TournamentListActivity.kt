@@ -12,8 +12,10 @@ import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentListBinding
 import com.example.tournamentmanagerapp.main.MainApp
 import com.example.tournamentmanagerapp.adapters.TournamentAdapter
+import com.example.tournamentmanagerapp.adapters.TournamentListener
+import com.example.tournamentmanagerapp.models.TournamentModel
 
-class TournamentListActivity : AppCompatActivity() {
+class TournamentListActivity : AppCompatActivity(), TournamentListener {
 
     lateinit var app: MainApp
     private lateinit var binding: ActivityTournamentListBinding
@@ -29,7 +31,7 @@ class TournamentListActivity : AppCompatActivity() {
 
         val layoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager
-        binding.recyclerView.adapter = TournamentAdapter(app.tournaments.findAll())
+        binding.recyclerView.adapter = TournamentAdapter(app.tournaments.findAll(),this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -46,6 +48,21 @@ class TournamentListActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+    override fun onTournamentClick(tournament: TournamentModel) {
+        val launcherIntent = Intent(this, TournamentActivity::class.java)
+        getClickResult.launch(launcherIntent)
+    }
+
+    private val getClickResult =
+        registerForActivityResult(
+            ActivityResultContracts.StartActivityForResult()
+        ) {
+            if (it.resultCode == Activity.RESULT_OK) {
+                (binding.recyclerView.adapter)?.
+                notifyItemRangeChanged(0, app.tournaments.findAll().size)
+            }
+        }
 
     private val getResult =
         registerForActivityResult(

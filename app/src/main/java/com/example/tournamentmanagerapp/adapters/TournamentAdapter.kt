@@ -6,7 +6,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tournamentmanagerapp.databinding.CardTournamentBinding
 import com.example.tournamentmanagerapp.models.TournamentModel
 
-class TournamentAdapter constructor(private var tournaments: List<TournamentModel>) :
+interface TournamentListener {
+    fun onTournamentClick(tournament: TournamentModel)
+}
+
+class TournamentAdapter constructor(private var tournaments: List<TournamentModel>,
+                                    private val listener: TournamentListener) :
 
     RecyclerView.Adapter<TournamentAdapter.MainHolder>() {
 
@@ -19,7 +24,7 @@ class TournamentAdapter constructor(private var tournaments: List<TournamentMode
 
     override fun onBindViewHolder(holder: MainHolder, position: Int) {
         val tournament = tournaments[holder.adapterPosition]
-        holder.bind(tournament)
+        holder.bind(tournament, listener)
     }
 
     override fun getItemCount(): Int = tournaments.size
@@ -27,11 +32,14 @@ class TournamentAdapter constructor(private var tournaments: List<TournamentMode
     class MainHolder(private val binding : CardTournamentBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(tournament: TournamentModel) {
+        fun bind(tournament: TournamentModel, listener: TournamentListener) {
             binding.tournamentTitle.text = tournament.title
             binding.tournamentOrg.text = "Organiser: ${tournament.org}"
             binding.tournamentStartDate.text = "Start Date: ${tournament.startDate}"
             binding.tournamentMaxTeams.text = "Max Teams: ${tournament.maxTeams}"
+            binding.root.setOnClickListener {
+                listener.onTournamentClick(tournament)
+            }
         }
     }
 }
