@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.ActionMenuView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,11 +27,16 @@ public final class ActivityTournamentListBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
+  @NonNull
+  public final ActionMenuView toolbarChange;
+
   private ActivityTournamentListBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull RecyclerView recyclerView, @NonNull Toolbar toolbar) {
+      @NonNull RecyclerView recyclerView, @NonNull Toolbar toolbar,
+      @NonNull ActionMenuView toolbarChange) {
     this.rootView = rootView;
     this.recyclerView = recyclerView;
     this.toolbar = toolbar;
+    this.toolbarChange = toolbarChange;
   }
 
   @Override
@@ -72,7 +78,14 @@ public final class ActivityTournamentListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTournamentListBinding((CoordinatorLayout) rootView, recyclerView, toolbar);
+      id = R.id.toolbarChange;
+      ActionMenuView toolbarChange = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarChange == null) {
+        break missingId;
+      }
+
+      return new ActivityTournamentListBinding((CoordinatorLayout) rootView, recyclerView, toolbar,
+          toolbarChange);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -25,11 +25,10 @@ class TournamentActivity : AppCompatActivity() {
     var tournament = TournamentModel()
     lateinit var app : MainApp
     private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
-    var edit = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        edit = true
+
         binding = ActivityTournamentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -114,7 +113,7 @@ class TournamentActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_cancel, menu)
-        if (edit) menu.getItem(0).isVisible = true
+        if (intent.hasExtra("tournament_edit")) menu.getItem(0).isVisible = true
         return super.onCreateOptionsMenu(menu)
     }
 

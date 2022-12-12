@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.widget.ActionMenuView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTeamListBinding
@@ -35,8 +37,20 @@ class TeamListActivity : AppCompatActivity(), TeamListener {
         binding.recyclerView.adapter = TeamAdapter(app.teams.findAll(),this)
     }
 
+    // Sourced from:
+    // https://stackoverflow.com/questions/32808996/android-add-two-toolbars-in-the-same-activity
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
+        val bottomBar: ActionMenuView = findViewById<View>(R.id.toolbarChange) as ActionMenuView
+        val bottomMenu: Menu = bottomBar.getMenu()
+        menuInflater.inflate(R.menu.menu_change, bottomMenu)
+
+        for (i in 0 until bottomMenu.size()) {
+            bottomMenu.getItem(i).setOnMenuItemClickListener { item -> onOptionsItemSelected(item) }
+        }
+//        binding.toolbarChange.inflateMenu(R.menu.menu_change)
+//        menuInflater.inflate(R.menu.menu_change, binding.toolbarChange.menu)
+//        binding.toolbar.inflateMenu(R.menu.menu_main)
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -45,6 +59,12 @@ class TeamListActivity : AppCompatActivity(), TeamListener {
             R.id.item_add -> {
                 val launcherIntent = Intent(this, TeamActivity::class.java)
                 getResult.launch(launcherIntent)
+            }
+            R.id.change_tour -> {
+                val launcherIntent = Intent(this, TournamentListActivity::class.java)
+                getResult.launch(launcherIntent)
+            }
+            R.id.change_team -> {
             }
         }
         return super.onOptionsItemSelected(item)

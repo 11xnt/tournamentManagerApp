@@ -2,18 +2,21 @@ package com.example.tournamentmanagerapp.activities
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.ActionMenuView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tournamentmanagerapp.R
-import com.example.tournamentmanagerapp.databinding.ActivityTournamentListBinding
-import com.example.tournamentmanagerapp.main.MainApp
 import com.example.tournamentmanagerapp.adapters.TournamentAdapter
 import com.example.tournamentmanagerapp.adapters.TournamentListener
+import com.example.tournamentmanagerapp.databinding.ActivityTournamentListBinding
+import com.example.tournamentmanagerapp.main.MainApp
 import com.example.tournamentmanagerapp.models.tournament.TournamentModel
+
 
 class TournamentListActivity : AppCompatActivity(), TournamentListener {
 
@@ -25,6 +28,7 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
         super.onCreate(savedInstanceState)
         binding = ActivityTournamentListBinding.inflate(layoutInflater)
         binding.toolbar.title = title
+
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
@@ -35,8 +39,20 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
         binding.recyclerView.adapter = TournamentAdapter(app.tournaments.findAll(),this)
     }
 
+    // Sourced from:
+    // https://stackoverflow.com/questions/32808996/android-add-two-toolbars-in-the-same-activity
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
+        val bottomBar: ActionMenuView = findViewById<View>(R.id.toolbarChange) as ActionMenuView
+        val bottomMenu: Menu = bottomBar.getMenu()
+        menuInflater.inflate(R.menu.menu_change, bottomMenu)
+
+        for (i in 0 until bottomMenu.size()) {
+            bottomMenu.getItem(i).setOnMenuItemClickListener { item -> onOptionsItemSelected(item) }
+        }
+//        binding.toolbarChange.inflateMenu(R.menu.menu_change)
+//        menuInflater.inflate(R.menu.menu_change, binding.toolbarChange.menu)
+//        binding.toolbar.inflateMenu(R.menu.menu_main)
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -45,6 +61,12 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
             R.id.item_add -> {
                 val launcherIntent = Intent(this, TournamentActivity::class.java)
                 getResult.launch(launcherIntent)
+            }
+            R.id.change_team -> {
+                val launcherIntent = Intent(this, TeamListActivity::class.java)
+                getResult.launch(launcherIntent)
+            }
+            R.id.change_tour -> {
             }
         }
         return super.onOptionsItemSelected(item)

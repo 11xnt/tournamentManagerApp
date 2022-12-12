@@ -34,6 +34,12 @@
     <string name="menu_delete">Delete</string>
     <string name="select_team_image">Select team image</string>
     <string name="select_tournament_image">Select tournament image</string>
+    <string name="teams">Teams</string>
+    <string name="title_activity_team">activity_team</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tournaments">Tournaments</string>
     <string name="window_text">Press the button below to receive a friendly greeting from Android.</string>
     <style name="Theme.TournamentManagerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

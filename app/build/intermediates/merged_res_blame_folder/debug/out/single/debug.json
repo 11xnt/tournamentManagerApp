@@ -1,102 +1,126 @@
 [
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\menu_menu_cancel.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\menu\\menu_cancel.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\layout_activity_tournament_list.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_tournament_list.xml"
+        "merged": "com.example.tournamentmanagerapp-merged_res-42:/layout_activity_team.xml.flat",
+        "source": "com.example.tournamentmanagerapp-main-44:/layout/activity_team.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "com.example.tournamentmanagerapp-merged_res-26:/layout_card_team.xml.flat",
-        "source": "com.example.tournamentmanagerapp-main-28:/layout/card_team.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\layout_card_team.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\layout\\card_team.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\layout_card_tournament.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\layout\\card_tournament.xml"
     },
     {
-        "merged": "com.example.tournamentmanagerapp-merged_res-26:/layout_activity_team_list.xml.flat",
-        "source": "com.example.tournamentmanagerapp-main-28:/layout/activity_team_list.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\layout_activity_tournament.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\layout\\activity_tournament.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\layout_activity_team.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\layout\\activity_team.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\menu\\menu_main.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\menu_menu_change.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\menu\\menu_change.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\menu_menu_cancel.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\menu\\menu_cancel.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\layout_card_tournament.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\card_tournament.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "com.example.tournamentmanagerapp-merged_res-26:/layout_activity_team.xml.flat",
-        "source": "com.example.tournamentmanagerapp-main-28:/layout/activity_team.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\layout_activity_tournament.xml.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\layout\\activity_tournament.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.tournamentmanagerapp-merged_res-26:/layout_card_tournament.xml.flat",
-        "source": "com.example.tournamentmanagerapp-main-28:/layout/card_tournament.xml"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\layout_activity_tournament_list.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\layout\\activity_tournament_list.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-26:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-28:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\layout_activity_team_list.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\layout\\activity_team_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\menu_menu_bottom.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\menu\\menu_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\ic_launcher_background.xml"
     }
 ]

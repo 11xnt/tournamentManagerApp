@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
     <application
-        android:name="com.example.tournamentmanagerapp.main.MainApp"
+        android:name=".main.MainApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,8 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TournamentManagerApp"
         tools:targetApi="31">
+
         <activity
-            android:name=".activities.TeamListActivity"
+            android:name=".activities.TournamentListActivity"
+            android:label="@string/tournaments"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,14 +31,33 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".activities.TeamActivity"
-            android:exported="true">
 
+        <activity
+            android:name=".activities.TournamentActivity"
+            android:label="@string/add_tour_name"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-    </application>
 
+        <activity
+            android:name=".activities.TeamListActivity"
+            android:label="@string/teams"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".activities.TeamActivity"
+            android:label="@string/add_team_name"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+    </application>
 </manifest>
