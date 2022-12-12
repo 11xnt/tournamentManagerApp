@@ -107,7 +107,7 @@ class TournamentActivity : AppCompatActivity() {
         }
 
         binding.chooseImage.setOnClickListener {
-            showImagePicker(imageIntentLauncher)
+            showImagePicker(imageIntentLauncher,this)
         }
         registerImagePickerCallback()
     }
