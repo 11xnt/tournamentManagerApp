@@ -13,7 +13,7 @@ import com.example.tournamentmanagerapp.databinding.ActivityTournamentListBindin
 import com.example.tournamentmanagerapp.main.MainApp
 import com.example.tournamentmanagerapp.adapters.TournamentAdapter
 import com.example.tournamentmanagerapp.adapters.TournamentListener
-import com.example.tournamentmanagerapp.models.TournamentModel
+import com.example.tournamentmanagerapp.models.tournament.TournamentModel
 
 class TournamentListActivity : AppCompatActivity(), TournamentListener {
 

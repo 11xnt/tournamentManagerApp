@@ -1,6 +1,5 @@
 package com.example.tournamentmanagerapp.activities
 
-import android.app.Activity
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.icu.util.Calendar
@@ -10,12 +9,11 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.view.get
 import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
 import com.example.tournamentmanagerapp.helpers.showImagePicker
 import com.example.tournamentmanagerapp.main.MainApp
-import com.example.tournamentmanagerapp.models.TournamentModel
+import com.example.tournamentmanagerapp.models.tournament.TournamentModel
 import com.github.ajalt.timberkt.Timber
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
