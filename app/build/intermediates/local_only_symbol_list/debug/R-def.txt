@@ -30,6 +30,8 @@ id navigation_home
 id navigation_notifications
 id recyclerView
 id relativeLayout
+id selectTeams
+id selectedTeams
 id teamImage
 id teamName
 id toolbar
@@ -75,8 +77,10 @@ string list_tours
 string menu_add_tour
 string menu_delete
 string select_team_image
+string select_teams
 string select_tournament_image
 string teams
+string teams_participating
 string title_activity_team
 string title_dashboard
 string title_home

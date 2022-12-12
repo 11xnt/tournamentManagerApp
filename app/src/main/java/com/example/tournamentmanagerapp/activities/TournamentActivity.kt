@@ -1,23 +1,31 @@
 package com.example.tournamentmanagerapp.activities
 
+import android.R.id.text2
+import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.icu.util.Calendar
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
 import com.example.tournamentmanagerapp.helpers.showImagePicker
 import com.example.tournamentmanagerapp.main.MainApp
+import com.example.tournamentmanagerapp.models.team.TeamJSONStore
+import com.example.tournamentmanagerapp.models.team.TeamModel
+import com.example.tournamentmanagerapp.models.team.TeamStore
 import com.example.tournamentmanagerapp.models.tournament.TournamentModel
 import com.github.ajalt.timberkt.Timber
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
 import timber.log.Timber.i
+import java.util.*
+
 
 //import android.app.
 class TournamentActivity : AppCompatActivity() {
@@ -25,6 +33,8 @@ class TournamentActivity : AppCompatActivity() {
     var tournament = TournamentModel()
     lateinit var app : MainApp
     private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
+    lateinit var teams: TeamStore
+    val selectedTeams = ArrayList<TeamModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,10 +80,57 @@ class TournamentActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
+        binding.selectTeams.setOnClickListener() {
+
+            val alertDialogBuilder = AlertDialog.Builder(this)
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Select Teams")
+//            builder.setMessage("TODO")
+
+            val selectedList = ArrayList<Int>()
+            val teams = TeamJSONStore(applicationContext).findAll()
+            val foo: ArrayList<String> = arrayListOf()
+            for (team in teams) {
+                foo.add(team.name)
+            }
+            var teamNames: Array<String> = foo.toTypedArray()
+
+            builder.setMultiChoiceItems(teamNames, null
+            ) { dialog, which, isChecked ->
+                if (isChecked) {
+                    selectedList.add(which)
+                } else if (selectedList.contains(which)) {
+                    selectedList.remove(Integer.valueOf(which))
+                }
+            }
+
+            builder.setPositiveButton("DONE") { dialogInterface, i ->
+                val selectedStrings = ArrayList<String>()
+
+                for (j in selectedList.indices) {
+                    selectedStrings.add(teamNames[selectedList[j]])
+                }
+
+                Toast.makeText(applicationContext, "Items selected are: " + Arrays.toString(selectedStrings.toTypedArray()), Toast.LENGTH_SHORT).show()
+                for (team in selectedStrings) {
+                    TeamJSONStore(applicationContext).findOne(team)
+                        ?.let { it1 -> selectedTeams.add(it1) }
+                }
+            }
+
+            builder.show()
+        }
+
         if (intent.hasExtra("tournament_edit")) {
             binding.btnAdd.setText(R.string.button_updateTournament)
             binding.chooseImage.setText(R.string.button_updateImage)
             tournament = intent.extras?.getParcelable("tournament_edit")!!
+
+            var listString = ""
+            for (s in tournament.partTeams) {
+                listString += "${s.name} \n"
+            }
+            binding.selectedTeams.setText("Teams Participating: \n"+ listString)
             binding.tournamentTitle.setText(tournament.title)
             binding.tournamentOrg.setText(tournament.org)
             binding.tournamentStartDate.setHint(tournament.startDate)
@@ -88,6 +145,7 @@ class TournamentActivity : AppCompatActivity() {
             tournament.org = binding.tournamentOrg.text.toString()
             tournament.startDate = binding.tournamentStartDate.hint.toString()
             tournament.maxTeams = Integer.parseInt(binding.tournamentMaxTeams.text.toString())
+            tournament.partTeams = selectedTeams
             if (tournament.title.isNotEmpty() && tournament.org.isNotEmpty() && tournament.startDate.isNotEmpty()
                 && tournament.maxTeams > 0) {
 

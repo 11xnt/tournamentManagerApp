@@ -5,6 +5,7 @@ import android.net.Uri
 import com.google.gson.*
 import com.google.gson.reflect.TypeToken
 import com.example.tournamentmanagerapp.helpers.*
+import com.example.tournamentmanagerapp.models.team.TeamModel
 import timber.log.Timber
 import java.lang.reflect.Type
 import java.util.*
@@ -34,8 +35,15 @@ class TournamentJSONStore(private val context: Context) : TournamentStore {
         return tournaments
     }
 
-    override fun findOne(id: Long): TournamentModel? {
-        TODO("Not yet implemented")
+    override fun findOne(title: String): TournamentModel? {
+        val teamsList = findAll() as ArrayList<TournamentModel>
+        val foundTournament: TournamentModel? = teamsList.find { p -> p.title == title }
+        return if (foundTournament != null) {
+            serialize()
+            foundTournament
+        } else {
+            TournamentModel()
+        }
     }
 
     override fun create(tournament: TournamentModel) {
@@ -54,6 +62,7 @@ class TournamentJSONStore(private val context: Context) : TournamentStore {
             foundTournament.image = tournament.image
             foundTournament.startDate = tournament.startDate
             foundTournament.maxTeams = tournament.maxTeams
+            foundTournament.partTeams = tournament.partTeams
         }
         serialize()
     }
