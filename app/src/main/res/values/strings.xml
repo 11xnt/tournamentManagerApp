@@ -20,6 +20,8 @@
     <string name="hint_tournamentMaxTeams">Max Teams</string>
     <string name="empty_fields">Please fill in all fields</string>
 
+    <string name="menu_delete">Delete</string>
+
     <string name="select_tournament_image">Select tournament image</string>
 
 </resources>

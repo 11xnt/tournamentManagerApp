@@ -10,6 +10,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.view.get
 import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
 import com.example.tournamentmanagerapp.helpers.showImagePicker
@@ -26,10 +27,11 @@ class TournamentActivity : AppCompatActivity() {
     var tournament = TournamentModel()
     lateinit var app : MainApp
     private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
+    var edit = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        edit = true
         binding = ActivityTournamentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -114,12 +116,18 @@ class TournamentActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_cancel, menu)
+        if (edit) menu.getItem(0).isVisible = true
         return super.onCreateOptionsMenu(menu)
     }
 
     // if cancel button is pressed, finish action and bring back to tournament list
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            R.id.item_delete -> {
+                setResult(99)
+                app.tournaments.delete(tournament)
+                finish()
+            }
             R.id.item_cancel -> {
                 finish()
             }
@@ -135,7 +143,12 @@ class TournamentActivity : AppCompatActivity() {
                     RESULT_OK -> {
                         if (result.data != null) {
                             i("Got Result ${result.data!!.data}")
-                            tournament.image = result.data!!.data!!
+
+                            val image = result.data!!.data!!
+                            contentResolver.takePersistableUriPermission(image,
+                                Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                            tournament.image = image
+
                             Picasso.get()
                                 .load(tournament.image)
                                 .into(binding.tournamentImage)

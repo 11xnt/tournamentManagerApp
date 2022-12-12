@@ -2756,6 +2756,7 @@ int id item3 0x7f0800ed
 int id item4 0x7f0800ee
 int id item_add 0x7f0800ef
 int id item_cancel 0x7f0800f0
+int id item_delete 0x7f0801f7
 int id item_touch_helper_previous_elevation 0x7f0800f1
 int id jumpToEnd 0x7f0800f2
 int id jumpToStart 0x7f0800f3
@@ -3305,6 +3306,7 @@ int string material_timepicker_pm 0x7f0f005b
 int string material_timepicker_select_time 0x7f0f005c
 int string material_timepicker_text_input_mode_description 0x7f0f005d
 int string menu_add_tour 0x7f0f005e
+int string menu_delete 0x7f0f008c
 int string mtrl_badge_numberless_content_description 0x7f0f005f
 int string mtrl_chip_close_icon_content_description 0x7f0f0060
 int string mtrl_exceed_max_badge_number_content_description 0x7f0f0061

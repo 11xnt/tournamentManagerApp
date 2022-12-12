@@ -2757,6 +2757,7 @@ id item3
 id item4
 id item_add
 id item_cancel
+id item_delete
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3306,6 +3307,7 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string menu_add_tour
+string menu_delete
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description

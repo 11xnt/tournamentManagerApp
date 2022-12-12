@@ -46,11 +46,21 @@ class TournamentJSONStore(private val context: Context) : TournamentStore {
 
 
     override fun update(tournament: TournamentModel) {
-        // todo
+        val tournamentsList = findAll() as ArrayList<TournamentModel>
+        var foundTournament: TournamentModel? = tournamentsList.find { p -> p.id == tournament.id }
+        if (foundTournament != null) {
+            foundTournament.title = tournament.title
+            foundTournament.org = tournament.org
+            foundTournament.image = tournament.image
+            foundTournament.startDate = tournament.startDate
+            foundTournament.maxTeams = tournament.maxTeams
+        }
+        serialize()
     }
 
     override fun delete(tournament: TournamentModel) {
-        TODO("Not yet implemented")
+        tournaments.remove(tournament)
+        serialize()
     }
 
     private fun serialize() {
