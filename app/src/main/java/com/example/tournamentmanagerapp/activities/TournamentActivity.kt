@@ -8,13 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
+import com.example.tournamentmanagerapp.helpers.showImagePicker
 import com.example.tournamentmanagerapp.main.MainApp
 import com.example.tournamentmanagerapp.models.TournamentModel
 import com.github.ajalt.timberkt.Timber
 import com.google.android.material.snackbar.Snackbar
+import com.squareup.picasso.Picasso
 import timber.log.Timber.i
 
 //import android.app.
@@ -22,6 +25,7 @@ class TournamentActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTournamentBinding
     var tournament = TournamentModel()
     lateinit var app : MainApp
+    private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,11 +73,15 @@ class TournamentActivity : AppCompatActivity() {
 
         if (intent.hasExtra("tournament_edit")) {
             binding.btnAdd.setText(R.string.button_updateTournament)
+            binding.chooseImage.setText(R.string.button_updateImage)
             tournament = intent.extras?.getParcelable("tournament_edit")!!
             binding.tournamentTitle.setText(tournament.title)
             binding.tournamentOrg.setText(tournament.org)
             binding.tournamentStartDate.setHint(tournament.startDate)
             binding.tournamentMaxTeams.setText(tournament.maxTeams.toString())
+            Picasso.get()
+                .load(tournament.image)
+                .into(binding.tournamentImage)
         }
 
         binding.btnAdd.setOnClickListener() {
@@ -97,6 +105,11 @@ class TournamentActivity : AppCompatActivity() {
                     .show()
             }
         }
+
+        binding.chooseImage.setOnClickListener {
+            showImagePicker(imageIntentLauncher)
+        }
+        registerImagePickerCallback()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -112,6 +125,26 @@ class TournamentActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun registerImagePickerCallback() {
+        imageIntentLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult())
+            { result ->
+                when(result.resultCode){
+                    RESULT_OK -> {
+                        if (result.data != null) {
+                            i("Got Result ${result.data!!.data}")
+                            tournament.image = result.data!!.data!!
+                            Picasso.get()
+                                .load(tournament.image)
+                                .into(binding.tournamentImage)
+                            binding.chooseImage.setText(R.string.button_updateImage)
+                        } // end of if
+                    }
+                    RESULT_CANCELED -> { } else -> { }
+                }
+            }
     }
 
 }

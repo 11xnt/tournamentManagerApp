@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,7 +31,13 @@ public final class ActivityTournamentBinding implements ViewBinding {
   public final Button btnAdd;
 
   @NonNull
+  public final Button chooseImage;
+
+  @NonNull
   public final Toolbar toolbarCancel;
+
+  @NonNull
+  public final ImageView tournamentImage;
 
   @NonNull
   public final EditText tournamentMaxTeams;
@@ -45,13 +52,16 @@ public final class ActivityTournamentBinding implements ViewBinding {
   public final EditText tournamentTitle;
 
   private ActivityTournamentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppBarLayout appBarLayout, @NonNull Button btnAdd, @NonNull Toolbar toolbarCancel,
+      @NonNull AppBarLayout appBarLayout, @NonNull Button btnAdd, @NonNull Button chooseImage,
+      @NonNull Toolbar toolbarCancel, @NonNull ImageView tournamentImage,
       @NonNull EditText tournamentMaxTeams, @NonNull EditText tournamentOrg,
       @NonNull TextView tournamentStartDate, @NonNull EditText tournamentTitle) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.btnAdd = btnAdd;
+    this.chooseImage = chooseImage;
     this.toolbarCancel = toolbarCancel;
+    this.tournamentImage = tournamentImage;
     this.tournamentMaxTeams = tournamentMaxTeams;
     this.tournamentOrg = tournamentOrg;
     this.tournamentStartDate = tournamentStartDate;
@@ -97,9 +107,21 @@ public final class ActivityTournamentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.chooseImage;
+      Button chooseImage = ViewBindings.findChildViewById(rootView, id);
+      if (chooseImage == null) {
+        break missingId;
+      }
+
       id = R.id.toolbarCancel;
       Toolbar toolbarCancel = ViewBindings.findChildViewById(rootView, id);
       if (toolbarCancel == null) {
+        break missingId;
+      }
+
+      id = R.id.tournamentImage;
+      ImageView tournamentImage = ViewBindings.findChildViewById(rootView, id);
+      if (tournamentImage == null) {
         break missingId;
       }
 
@@ -128,7 +150,8 @@ public final class ActivityTournamentBinding implements ViewBinding {
       }
 
       return new ActivityTournamentBinding((ConstraintLayout) rootView, appBarLayout, btnAdd,
-          toolbarCancel, tournamentMaxTeams, tournamentOrg, tournamentStartDate, tournamentTitle);
+          chooseImage, toolbarCancel, tournamentImage, tournamentMaxTeams, tournamentOrg,
+          tournamentStartDate, tournamentTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

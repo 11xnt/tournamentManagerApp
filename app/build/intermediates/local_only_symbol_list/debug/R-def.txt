@@ -14,11 +14,15 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id appBarLayout
 id btnAdd
+id chooseImage
+id imageIcon
 id item_add
 id item_cancel
 id recyclerView
+id relativeLayout
 id toolbar
 id toolbarCancel
+id tournamentImage
 id tournamentMaxTeams
 id tournamentOrg
 id tournamentStartDate
@@ -32,8 +36,10 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string add_tour_name
 string app_name
+string button_addImage
 string button_addTournament
 string button_label
+string button_updateImage
 string button_updateTournament
 string cancel
 string empty_fields
@@ -44,6 +50,7 @@ string hint_tournamentStartDate
 string hint_tournamentTitle
 string list_tours
 string menu_add_tour
+string select_tournament_image
 string window_text
 style Theme.TournamentManagerApp
 xml backup_rules

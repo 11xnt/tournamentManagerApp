@@ -31,6 +31,7 @@ class TournamentMemStore : TournamentStore {
             foundTournament.org = tournament.org
             foundTournament.startDate = tournament.startDate
             foundTournament.maxTeams = tournament.maxTeams
+            foundTournament.image = tournament.image
         }
     }
 

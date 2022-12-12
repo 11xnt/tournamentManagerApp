@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tournamentmanagerapp.databinding.CardTournamentBinding
 import com.example.tournamentmanagerapp.models.TournamentModel
+import com.squareup.picasso.Picasso
 
 interface TournamentListener {
     fun onTournamentClick(tournament: TournamentModel)
@@ -37,6 +38,7 @@ class TournamentAdapter constructor(private var tournaments: List<TournamentMode
             binding.tournamentOrg.text = "Organiser: ${tournament.org}"
             binding.tournamentStartDate.text = "Start Date: ${tournament.startDate}"
             binding.tournamentMaxTeams.text = "Max Teams: ${tournament.maxTeams}"
+            Picasso.get().load(tournament.image).resize(200,200).into(binding.imageIcon)
             binding.root.setOnClickListener {
                 listener.onTournamentClick(tournament)
             }

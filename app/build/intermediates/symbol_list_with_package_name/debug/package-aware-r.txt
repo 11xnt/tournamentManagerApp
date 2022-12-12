@@ -2636,6 +2636,7 @@ id chip1
 id chip2
 id chip3
 id chip_group
+id chooseImage
 id chronometer
 id circle_center
 id clear_text
@@ -2743,6 +2744,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageIcon
 id immediateStop
 id included
 id info
@@ -2869,6 +2871,7 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id relativeLayout
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2981,6 +2984,7 @@ id toolbarCancel
 id top
 id topPanel
 id touch_outside
+id tournamentImage
 id tournamentMaxTeams
 id tournamentOrg
 id tournamentStartDate
@@ -3240,8 +3244,10 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string button_addImage
 string button_addTournament
 string button_label
+string button_updateImage
 string button_updateTournament
 string cancel
 string character_counter_content_description
@@ -3342,6 +3348,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string select_tournament_image
 string status_bar_notification_info_overflow
 string window_text
 style AlertDialog_AppCompat
