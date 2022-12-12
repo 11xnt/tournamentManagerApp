@@ -8,7 +8,7 @@ import com.example.tournamentmanagerapp.models.TournamentModel
 import com.squareup.picasso.Picasso
 
 interface TournamentListener {
-    fun onTournamentClick(tournament: TournamentModel)
+    fun onTournamentClick(tournament: TournamentModel, pos: Int)
 }
 
 class TournamentAdapter constructor(private var tournaments: List<TournamentModel>,
@@ -23,7 +23,7 @@ class TournamentAdapter constructor(private var tournaments: List<TournamentMode
         return MainHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: MainHolder, position: Int) {
+    override fun onBindViewHolder(holder: MainHolder, pos: Int) {
         val tournament = tournaments[holder.adapterPosition]
         holder.bind(tournament, listener)
     }
@@ -40,7 +40,7 @@ class TournamentAdapter constructor(private var tournaments: List<TournamentMode
             binding.tournamentMaxTeams.text = "Max Teams: ${tournament.maxTeams}"
             Picasso.get().load(tournament.image).resize(200,200).into(binding.imageIcon)
             binding.root.setOnClickListener {
-                listener.onTournamentClick(tournament)
+                listener.onTournamentClick(tournament, adapterPosition)
             }
         }
     }

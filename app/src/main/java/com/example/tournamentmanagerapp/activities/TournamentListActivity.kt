@@ -19,6 +19,7 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
 
     lateinit var app: MainApp
     private lateinit var binding: ActivityTournamentListBinding
+    private var position: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,9 +50,10 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onTournamentClick(tournament: TournamentModel) {
+    override fun onTournamentClick(tournament: TournamentModel, pos: Int) {
         val launcherIntent = Intent(this, TournamentActivity::class.java)
         launcherIntent.putExtra("tournament_edit", tournament)
+        position = pos
         getClickResult.launch(launcherIntent)
     }
 
@@ -61,8 +63,10 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
         ) {
             if (it.resultCode == Activity.RESULT_OK) {
                 (binding.recyclerView.adapter)?.
-                notifyItemRangeChanged(0, app.tournaments.findAll().size)
+                notifyItemRangeChanged(0,app.tournaments.findAll().size)
             }
+            else // Deleting
+                if (it.resultCode == 99)     (binding.recyclerView.adapter)?.notifyItemRemoved(position)
         }
 
     private val getResult =

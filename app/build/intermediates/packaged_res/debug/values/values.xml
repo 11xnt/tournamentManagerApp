@@ -26,6 +26,7 @@
     <string name="hint_tournamentTitle">Tournament Title</string>
     <string name="list_tours">Tournaments</string>
     <string name="menu_add_tour">Add</string>
+    <string name="menu_delete">Delete</string>
     <string name="select_tournament_image">Select tournament image</string>
     <string name="window_text">Press the button below to receive a friendly greeting from Android.</string>
     <style name="Theme.TournamentManagerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
