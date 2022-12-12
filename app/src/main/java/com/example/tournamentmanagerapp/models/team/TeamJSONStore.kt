@@ -49,7 +49,7 @@ class TeamJSONStore(private val context: Context) : TeamStore {
         val teamsList = findAll() as ArrayList<TeamModel>
         var foundTeam: TeamModel? = teamsList.find { p -> p.id == team.id }
         if (foundTeam != null) {
-            foundTeam.title = team.title
+            foundTeam.name = team.name
             foundTeam.image = team.image
         }
         serialize()

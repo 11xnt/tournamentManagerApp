@@ -6,6 +6,6 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class TeamModel(var id: Long = 0,
-                           var title: String = "",
+                           var name: String = "",
                            var image: Uri = Uri.EMPTY
 ) : Parcelable

@@ -2955,6 +2955,8 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id teamImage
+id teamName
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -3112,8 +3114,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_team
+layout activity_team_list
 layout activity_tournament
 layout activity_tournament_list
+layout card_team
 layout card_tournament
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3239,6 +3244,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_team_name
 string add_tour_name
 string androidx_startup
 string app_name
@@ -3246,9 +3252,11 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string button_addImage
+string button_addTeam
 string button_addTournament
 string button_label
 string button_updateImage
+string button_updateTeam
 string button_updateTournament
 string cancel
 string character_counter_content_description
@@ -3263,6 +3271,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string greeting_text
 string hide_bottom_view_on_scroll_behavior
+string hint_teamName
 string hint_tournamentMaxTeams
 string hint_tournamentOrg
 string hint_tournamentStartDate
@@ -3270,6 +3279,7 @@ string hint_tournamentTitle
 string icon_content_description
 string item_view_role_description
 string label
+string list_teams
 string list_tours
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -3350,6 +3360,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string select_team_image
 string select_tournament_image
 string status_bar_notification_info_overflow
 string window_text

@@ -26,7 +26,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.TournamentManagerApp" >
         <activity
-            android:name="com.example.tournamentmanagerapp.activities.TournamentListActivity"
+            android:name="com.example.tournamentmanagerapp.activities.TeamListActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +39,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.tournamentmanagerapp.activities.TournamentActivity"
+            android:name="com.example.tournamentmanagerapp.activities.TeamActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"

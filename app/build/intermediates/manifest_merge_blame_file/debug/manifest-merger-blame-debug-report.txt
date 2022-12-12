@@ -44,8 +44,8 @@
 27-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:15:9-58
 28        <activity
 28-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:17:9-29:20
-29            android:name="com.example.tournamentmanagerapp.activities.TournamentListActivity"
-29-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:18:13-62
+29            android:name="com.example.tournamentmanagerapp.activities.TeamListActivity"
+29-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:18:13-56
 30            android:exported="true" >
 30-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:19:13-36
 31            <intent-filter>
@@ -68,8 +68,8 @@
 40        </activity>
 41        <activity
 41-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:30:9-37:20
-42            android:name="com.example.tournamentmanagerapp.activities.TournamentActivity"
-42-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:31:13-58
+42            android:name="com.example.tournamentmanagerapp.activities.TeamActivity"
+42-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:31:13-52
 43            android:exported="true" >
 43-->C:\Users\allen\AndroidStudioProjects\tournamentManagerApp\app\src\main\AndroidManifest.xml:32:13-36
 44            <meta-data
