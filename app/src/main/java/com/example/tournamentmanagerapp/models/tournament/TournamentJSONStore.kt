@@ -54,6 +54,7 @@ class TournamentJSONStore(private val context: Context) : TournamentStore {
             foundTournament.image = tournament.image
             foundTournament.startDate = tournament.startDate
             foundTournament.maxTeams = tournament.maxTeams
+            foundTournament.partTeams = tournament.partTeams
         }
         serialize()
     }
