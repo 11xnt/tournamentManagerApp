@@ -2964,6 +2964,7 @@ id search_voice_btn
 id selectTeams
 id select_dialog_listview
 id selected
+id selectedTeams
 id selection_type
 id sharedValueSet
 id sharedValueUnset
@@ -3431,9 +3432,11 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string select_team_image
+string select_teams
 string select_tournament_image
 string status_bar_notification_info_overflow
 string teams
+string teams_participating
 string title_activity_team
 string title_dashboard
 string title_home

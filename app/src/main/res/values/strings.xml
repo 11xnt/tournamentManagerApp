@@ -37,4 +37,6 @@
     <string name="title_notifications">Notifications</string>
     <string name="teams">Teams</string>
     <string name="tournaments">Tournaments</string>
+    <string name="teams_participating">Teams Participating:</string>
+    <string name="select_teams">Select Teams</string>
 </resources>

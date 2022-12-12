@@ -34,8 +34,15 @@ class TeamJSONStore(private val context: Context) : TeamStore {
         return teams
     }
 
-    override fun findOne(id: Long): TeamModel? {
-        TODO("Not yet implemented")
+    override fun findOne(name: String): TeamModel? {
+        val teamsList = findAll() as ArrayList<TeamModel>
+        val foundTeam: TeamModel? = teamsList.find { p -> p.name == name }
+        return if (foundTeam != null) {
+            serialize()
+            foundTeam
+        } else {
+            TeamModel()
+        }
     }
 
     override fun create(team: TeamModel) {

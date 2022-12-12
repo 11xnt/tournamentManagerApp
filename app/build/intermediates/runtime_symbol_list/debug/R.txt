@@ -2963,6 +2963,7 @@ int id search_voice_btn 0x7f08018b
 int id selectTeams 0x7f08018c
 int id select_dialog_listview 0x7f08018d
 int id selected 0x7f08018e
+int id selectedTeams 0x7f08020a
 int id selection_type 0x7f08018f
 int id sharedValueSet 0x7f080190
 int id sharedValueUnset 0x7f080191
@@ -3430,9 +3431,11 @@ int string path_password_eye_mask_visible 0x7f10008e
 int string path_password_strike_through 0x7f10008f
 int string search_menu_title 0x7f100090
 int string select_team_image 0x7f100091
+int string select_teams 0x7f10009b
 int string select_tournament_image 0x7f100092
 int string status_bar_notification_info_overflow 0x7f100093
 int string teams 0x7f100094
+int string teams_participating 0x7f10009c
 int string title_activity_team 0x7f100095
 int string title_dashboard 0x7f100096
 int string title_home 0x7f100097
