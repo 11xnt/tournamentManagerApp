@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tournamentmanagerapp.databinding.CardTournamentBinding
-import com.example.tournamentmanagerapp.models.TournamentModel
+import com.example.tournamentmanagerapp.models.tournament.TournamentModel
 import com.squareup.picasso.Picasso
 
 interface TournamentListener {

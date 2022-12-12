@@ -1,6 +1,5 @@
 package com.example.tournamentmanagerapp.activities
 
-import android.app.Activity
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.icu.util.Calendar
@@ -10,12 +9,11 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.view.get
 import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
 import com.example.tournamentmanagerapp.helpers.showImagePicker
 import com.example.tournamentmanagerapp.main.MainApp
-import com.example.tournamentmanagerapp.models.TournamentModel
+import com.example.tournamentmanagerapp.models.tournament.TournamentModel
 import com.github.ajalt.timberkt.Timber
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
@@ -27,11 +25,10 @@ class TournamentActivity : AppCompatActivity() {
     var tournament = TournamentModel()
     lateinit var app : MainApp
     private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
-    var edit = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        edit = true
+
         binding = ActivityTournamentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -116,7 +113,7 @@ class TournamentActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_cancel, menu)
-        if (edit) menu.getItem(0).isVisible = true
+        if (intent.hasExtra("tournament_edit")) menu.getItem(0).isVisible = true
         return super.onCreateOptionsMenu(menu)
     }
 

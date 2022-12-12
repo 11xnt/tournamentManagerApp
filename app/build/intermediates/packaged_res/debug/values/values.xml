@@ -10,24 +10,36 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="add_team_name">Add a Team</string>
     <string name="add_tour_name">Add a Tournament</string>
     <string name="app_name">tournamentManagerApp</string>
     <string name="button_addImage">Add Image</string>
+    <string name="button_addTeam">Add Team</string>
     <string name="button_addTournament">Add Tournament</string>
     <string name="button_label">Show Greeting</string>
     <string name="button_updateImage">Update Image</string>
+    <string name="button_updateTeam">Update Team</string>
     <string name="button_updateTournament">Update Tournament</string>
     <string name="cancel">Cancel</string>
     <string name="empty_fields">Please fill in all fields</string>
     <string name="greeting_text">Greetings One and All from Android!</string>
+    <string name="hint_teamName">Team Title</string>
     <string name="hint_tournamentMaxTeams">Max Teams</string>
     <string name="hint_tournamentOrg">Tournament Organiser</string>
     <string name="hint_tournamentStartDate">Start Date (dd/mm/yyyy)</string>
     <string name="hint_tournamentTitle">Tournament Title</string>
+    <string name="list_teams">Teams</string>
     <string name="list_tours">Tournaments</string>
     <string name="menu_add_tour">Add</string>
     <string name="menu_delete">Delete</string>
+    <string name="select_team_image">Select team image</string>
     <string name="select_tournament_image">Select tournament image</string>
+    <string name="teams">Teams</string>
+    <string name="title_activity_team">activity_team</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tournaments">Tournaments</string>
     <string name="window_text">Press the button below to receive a friendly greeting from Android.</string>
     <style name="Theme.TournamentManagerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

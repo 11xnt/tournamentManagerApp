@@ -27,7 +27,8 @@
         android:theme="@style/Theme.TournamentManagerApp" >
         <activity
             android:name="com.example.tournamentmanagerapp.activities.TournamentListActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:label="@string/tournaments" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,11 +41,35 @@
         </activity>
         <activity
             android:name="com.example.tournamentmanagerapp.activities.TournamentActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:label="@string/add_tour_name" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name="com.example.tournamentmanagerapp.activities.TeamListActivity"
+            android:exported="true"
+            android:label="@string/teams" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.tournamentmanagerapp.activities.TeamActivity"
+            android:exported="true"
+            android:label="@string/add_team_name" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

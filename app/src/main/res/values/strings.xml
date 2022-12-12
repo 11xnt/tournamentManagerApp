@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">tournamentManagerApp</string>
     <string name="add_tour_name">Add a Tournament</string>
+    <string name="add_team_name">Add a Team</string>
     <string name="list_tours">Tournaments</string>
+    <string name="list_teams">Teams</string>
 
     <string name="menu_add_tour">Add</string>
     <string name="cancel">Cancel</string>
@@ -14,6 +16,11 @@
     <string name="button_addImage">Add Image</string>
     <string name="button_updateImage">Update Image</string>
 
+    <string name="button_addTeam">Add Team</string>
+    <string name="button_updateTeam">Update Team</string>
+
+    <string name="hint_teamName">Team Title</string>
+
     <string name="hint_tournamentTitle">Tournament Title</string>
     <string name="hint_tournamentOrg">Tournament Organiser</string>
     <string name="hint_tournamentStartDate">Start Date (dd/mm/yyyy)</string>
@@ -23,5 +30,11 @@
     <string name="menu_delete">Delete</string>
 
     <string name="select_tournament_image">Select tournament image</string>
-
+    <string name="select_team_image">Select team image</string>
+    <string name="title_activity_team">activity_team</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="teams">Teams</string>
+    <string name="tournaments">Tournaments</string>
 </resources>

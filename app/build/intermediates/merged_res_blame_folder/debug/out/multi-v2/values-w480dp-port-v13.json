@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tournamentmanagerapp-mergeDebugResources-24:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "com.example.tournamentmanagerapp-mergeDebugResources-40:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\allen\\.gradle\\caches\\transforms-3\\9fd743a7e3f1a17577437381382c3eb1\\transformed\\material-1.6.1\\res\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
