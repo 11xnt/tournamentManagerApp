@@ -30,6 +30,7 @@ id navigation_home
 id navigation_notifications
 id recyclerView
 id relativeLayout
+id selectTeams
 id teamImage
 id teamName
 id toolbar

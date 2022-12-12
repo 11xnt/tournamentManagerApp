@@ -50,9 +50,6 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
         for (i in 0 until bottomMenu.size()) {
             bottomMenu.getItem(i).setOnMenuItemClickListener { item -> onOptionsItemSelected(item) }
         }
-//        binding.toolbarChange.inflateMenu(R.menu.menu_change)
-//        menuInflater.inflate(R.menu.menu_change, binding.toolbarChange.menu)
-//        binding.toolbar.inflateMenu(R.menu.menu_main)
         return super.onCreateOptionsMenu(menu)
     }
 

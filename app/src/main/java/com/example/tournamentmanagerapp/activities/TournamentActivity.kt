@@ -1,18 +1,22 @@
 package com.example.tournamentmanagerapp.activities
 
+import android.app.AlertDialog
+import android.app.AlertDialog.*
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.icu.util.Calendar
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.example.tournamentmanagerapp.R
 import com.example.tournamentmanagerapp.databinding.ActivityTournamentBinding
 import com.example.tournamentmanagerapp.helpers.showImagePicker
 import com.example.tournamentmanagerapp.main.MainApp
+import com.example.tournamentmanagerapp.models.team.TeamStore
 import com.example.tournamentmanagerapp.models.tournament.TournamentModel
 import com.github.ajalt.timberkt.Timber
 import com.google.android.material.snackbar.Snackbar
@@ -25,6 +29,7 @@ class TournamentActivity : AppCompatActivity() {
     var tournament = TournamentModel()
     lateinit var app : MainApp
     private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
+    lateinit var teams: TeamStore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +73,30 @@ class TournamentActivity : AppCompatActivity() {
             // at last we are calling show
             // to display our date picker dialog.
             datePickerDialog.show()
+        }
+
+        binding.selectTeams.setOnClickListener() {
+            val alertDialogBuilder = AlertDialog.Builder(this)
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Select Teams")
+            builder.setMessage("TODO")
+//builder.setPositiveButton("OK", DialogInterface.OnClickListener(function = x))
+
+            builder.setPositiveButton(android.R.string.yes) { dialog, which ->
+                Toast.makeText(applicationContext,
+                    android.R.string.yes, Toast.LENGTH_SHORT).show()
+            }
+
+            builder.setNegativeButton(android.R.string.no) { dialog, which ->
+                Toast.makeText(applicationContext,
+                    android.R.string.no, Toast.LENGTH_SHORT).show()
+            }
+
+            builder.setNeutralButton("Maybe") { dialog, which ->
+                Toast.makeText(applicationContext,
+                    "Maybe", Toast.LENGTH_SHORT).show()
+            }
+            builder.show()
         }
 
         if (intent.hasExtra("tournament_edit")) {
