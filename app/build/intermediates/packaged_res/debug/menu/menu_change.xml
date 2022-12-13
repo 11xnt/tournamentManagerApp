@@ -4,11 +4,13 @@
 
     <item
         android:id="@+id/change_tour"
+        android:icon="@drawable/baseline_auto_graph_white_18dp"
         android:title="@string/tournaments"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/change_team"
+        android:icon="@drawable/baseline_people_alt_white_18dp"
         android:title="@string/teams"
         app:showAsAction="always" />
 </menu>

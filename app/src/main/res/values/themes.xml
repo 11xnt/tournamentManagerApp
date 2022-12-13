@@ -11,6 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Sourced from: -->
+        <!-- https://stackoverflow.com/questions/26515058/this-activity-already-has-an-action-bar-supplied-by-the-window-decor-->
+        <item name="windowNoTitle">true</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

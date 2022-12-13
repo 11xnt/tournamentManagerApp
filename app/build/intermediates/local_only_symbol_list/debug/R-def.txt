@@ -10,6 +10,11 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable baseline_auto_graph_white_18dp
+drawable baseline_groups_white_18dp
+drawable baseline_library_add_white_18dp
+drawable baseline_lightbulb_white_18dp
+drawable baseline_people_alt_white_18dp
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
@@ -34,6 +39,7 @@ id selectTeams
 id selectedTeams
 id teamImage
 id teamName
+id theme
 id toolbar
 id toolbarCancel
 id toolbarChange
@@ -79,6 +85,7 @@ string menu_delete
 string select_team_image
 string select_teams
 string select_tournament_image
+string switch_theme
 string teams
 string teams_participating
 string title_activity_team

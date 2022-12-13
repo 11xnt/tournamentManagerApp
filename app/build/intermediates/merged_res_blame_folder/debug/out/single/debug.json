@@ -24,12 +24,20 @@
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_baseline_lightbulb_white_18dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\baseline_lightbulb_white_18dp.xml"
+    },
+    {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tournamentmanagerapp-merged_res-42:/menu_menu_change.xml.flat",
+        "source": "com.example.tournamentmanagerapp-main-44:/menu/menu_change.xml"
     },
     {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_ic_dashboard_black_24dp.xml.flat",
@@ -68,6 +76,10 @@
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_baseline_library_add_white_18dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\baseline_library_add_white_18dp.xml"
+    },
+    {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\menu_menu_cancel.xml.flat",
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\menu\\menu_cancel.xml"
     },
@@ -76,12 +88,16 @@
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "com.example.tournamentmanagerapp-merged_res-42:/layout_activity_tournament.xml.flat",
-        "source": "com.example.tournamentmanagerapp-main-44:/layout/activity_tournament.xml"
-    },
-    {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_baseline_people_alt_white_18dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\baseline_people_alt_white_18dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_baseline_groups_white_18dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\baseline_groups_white_18dp.xml"
     },
     {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -118,5 +134,9 @@
     {
         "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-merged_res-42:\\drawable_baseline_auto_graph_white_18dp.xml.flat",
+        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-44:\\drawable\\baseline_auto_graph_white_18dp.xml"
     }
 ]
