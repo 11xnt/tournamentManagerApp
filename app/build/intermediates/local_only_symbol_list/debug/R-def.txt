@@ -15,11 +15,13 @@ drawable baseline_groups_white_18dp
 drawable baseline_library_add_white_18dp
 drawable baseline_lightbulb_white_18dp
 drawable baseline_people_alt_white_18dp
+drawable bg_gradient
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_notifications_black_24dp
+drawable splash_background
 id appBarLayout
 id btnAdd
 id change_team
@@ -94,6 +96,7 @@ string title_home
 string title_notifications
 string tournaments
 string window_text
+style SplashTheme
 style Theme.TournamentManagerApp
 xml backup_rules
 xml data_extraction_rules
