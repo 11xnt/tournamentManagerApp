@@ -39,6 +39,7 @@ id recyclerView
 id relativeLayout
 id selectTeams
 id selectedTeams
+id signIn
 id teamImage
 id teamName
 id theme
@@ -50,6 +51,7 @@ id tournamentMaxTeams
 id tournamentOrg
 id tournamentStartDate
 id tournamentTitle
+layout activity_login
 layout activity_team
 layout activity_team_list
 layout activity_tournament
@@ -69,11 +71,18 @@ string button_addImage
 string button_addTeam
 string button_addTournament
 string button_label
+string button_signIn
 string button_updateImage
 string button_updateTeam
 string button_updateTournament
 string cancel
+string default_web_client_id
 string empty_fields
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string greeting_text
 string hint_teamName
 string hint_tournamentMaxTeams
@@ -82,8 +91,10 @@ string hint_tournamentStartDate
 string hint_tournamentTitle
 string list_teams
 string list_tours
+string login
 string menu_add_tour
 string menu_delete
+string project_id
 string select_team_image
 string select_teams
 string select_tournament_image

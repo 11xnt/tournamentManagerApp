@@ -31,6 +31,16 @@
         </activity>
 
         <activity
+            android:name=".activities.GoogleSignInActivity"
+            android:label="@string/login"
+            android:exported="true">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
             android:name=".activities.TournamentListActivity"
             android:label="@string/tournaments"
             android:exported="true">

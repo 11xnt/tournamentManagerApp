@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1032852931254",
+    "project_id": "tournamentmanagerapp-efe64",
+    "storage_bucket": "tournamentmanagerapp-efe64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032852931254:android:507605ee7b63fa8ec75c17",
+        "android_client_info": {
+          "package_name": "com.example.tournamentmanagerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032852931254-7efl1oc7j24dg5oeni8sdtmlnqcn5q3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tournamentmanagerapp",
+            "certificate_hash": "d71d4c52a7faaa6c60657301dd542aa4c1773e2f"
+          }
+        },
+        {
+          "client_id": "1032852931254-7j2o0puj49qhcodaefap0jtvjpbnk0du.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTSz9Ds1u6W7sRUhQltUVWYCDcKv4Om-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032852931254-7j2o0puj49qhcodaefap0jtvjpbnk0du.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
