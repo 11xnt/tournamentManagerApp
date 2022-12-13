@@ -1,13 +1,17 @@
 package com.example.tournamentmanagerapp.activities
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.ActionMenuView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tournamentmanagerapp.R
@@ -37,6 +41,7 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
         val layoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager
         binding.recyclerView.adapter = TournamentAdapter(app.tournaments.findAll(),this)
+
     }
 
     // Sourced from:
@@ -65,8 +70,20 @@ class TournamentListActivity : AppCompatActivity(), TournamentListener {
             }
             R.id.change_tour -> {
             }
+            R.id.theme -> {
+                if(isDarkThemeOn()){
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                }
+            }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun Context.isDarkThemeOn(): Boolean {
+        return resources.configuration.uiMode and
+                Configuration.UI_MODE_NIGHT_MASK == UI_MODE_NIGHT_YES
     }
 
     override fun onTournamentClick(tournament: TournamentModel, pos: Int) {

@@ -80,12 +80,13 @@ class TournamentActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
+        // sourced from:
+        // https://www.digitalocean.com/community/tutorials/android-alert-dialog-using-kotlin
         binding.selectTeams.setOnClickListener() {
 
             val alertDialogBuilder = AlertDialog.Builder(this)
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Select Teams")
-//            builder.setMessage("TODO")
 
             val selectedList = ArrayList<Int>()
             val teams = TeamJSONStore(applicationContext).findAll()

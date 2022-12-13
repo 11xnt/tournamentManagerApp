@@ -39,4 +39,5 @@
     <string name="tournaments">Tournaments</string>
     <string name="teams_participating">Teams Participating:</string>
     <string name="select_teams">Select Teams</string>
+    <string name="switch_theme">Switch Theme</string>
 </resources>

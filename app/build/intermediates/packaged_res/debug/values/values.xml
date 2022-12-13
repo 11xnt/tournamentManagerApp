@@ -35,6 +35,7 @@
     <string name="select_team_image">Select team image</string>
     <string name="select_teams">Select Teams</string>
     <string name="select_tournament_image">Select tournament image</string>
+    <string name="switch_theme">Switch Theme</string>
     <string name="teams">Teams</string>
     <string name="teams_participating">Teams Participating:</string>
     <string name="title_activity_team">activity_team</string>
@@ -43,6 +44,14 @@
     <string name="title_notifications">Notifications</string>
     <string name="tournaments">Tournaments</string>
     <string name="window_text">Press the button below to receive a friendly greeting from Android.</string>
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <item name="android:windowBackground">@drawable/splash_background</item>
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="Theme.TournamentManagerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/colorAccent</item>
@@ -54,6 +63,9 @@
         <item name="colorOnSecondary">@color/black</item>
         
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        
+        <item name="windowNoTitle">true</item>
         
     </style>
 </resources>

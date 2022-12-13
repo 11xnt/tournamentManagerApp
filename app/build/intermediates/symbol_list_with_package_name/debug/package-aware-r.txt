@@ -2493,6 +2493,12 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_auto_graph_white_18dp
+drawable baseline_groups_white_18dp
+drawable baseline_library_add_white_18dp
+drawable baseline_lightbulb_white_18dp
+drawable baseline_people_alt_white_18dp
+drawable bg_gradient
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2561,6 +2567,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable splash_background
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3042,6 +3049,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id theme
 id time
 id title
 id titleDividerNoCustom
@@ -3435,6 +3443,7 @@ string select_team_image
 string select_teams
 string select_tournament_image
 string status_bar_notification_info_overflow
+string switch_theme
 string teams
 string teams_participating
 string title_activity_team
@@ -3816,6 +3825,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
 style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
+style SplashTheme
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar
