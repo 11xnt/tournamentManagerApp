@@ -1,34 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-47:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-50:\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-47:\\layout\\card_team.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-50:\\layout\\card_team.xml"
-    },
-    {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-47:\\layout\\activity_tournament.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-50:\\layout\\activity_tournament.xml"
+        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-47:/layout/card_tournament.xml",
+        "source": "com.example.tournamentmanagerapp-main-50:/layout/card_tournament.xml"
     },
     {
         "merged": "com.example.tournamentmanagerapp-mergeDebugResources-47:/layout/activity_login.xml",
         "source": "com.example.tournamentmanagerapp-main-50:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-47:\\layout\\card_tournament.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-50:\\layout\\card_tournament.xml"
+        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-47:/layout/activity_team.xml",
+        "source": "com.example.tournamentmanagerapp-main-50:/layout/activity_team.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-47:\\layout\\activity_tournament_list.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-50:\\layout\\activity_tournament_list.xml"
+        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-47:/layout/activity_team_list.xml",
+        "source": "com.example.tournamentmanagerapp-main-50:/layout/activity_team_list.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-47:\\layout\\activity_team_list.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-50:\\layout\\activity_team_list.xml"
+        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-47:/layout/activity_tournament.xml",
+        "source": "com.example.tournamentmanagerapp-main-50:/layout/activity_tournament.xml"
     },
     {
-        "merged": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-mergeDebugResources-47:\\layout\\activity_team.xml",
-        "source": "C:\\Users\\allen\\.gradle\\daemon\\7.4\\com.example.tournamentmanagerapp-main-50:\\layout\\activity_team.xml"
+        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-47:/layout/card_team.xml",
+        "source": "com.example.tournamentmanagerapp-main-50:/layout/card_team.xml"
+    },
+    {
+        "merged": "com.example.tournamentmanagerapp-mergeDebugResources-47:/layout/activity_tournament_list.xml",
+        "source": "com.example.tournamentmanagerapp-main-50:/layout/activity_tournament_list.xml"
     }
 ]

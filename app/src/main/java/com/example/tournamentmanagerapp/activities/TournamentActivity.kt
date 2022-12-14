@@ -23,6 +23,7 @@ import com.example.tournamentmanagerapp.models.tournament.TournamentModel
 import com.github.ajalt.timberkt.Timber
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
+import kotlinx.coroutines.awaitAll
 import timber.log.Timber.i
 import java.util.*
 
@@ -91,35 +92,44 @@ class TournamentActivity : AppCompatActivity() {
             val selectedList = ArrayList<Int>()
             val teams = TeamJSONStore(applicationContext).findAll()
             val foo: ArrayList<String> = arrayListOf()
-            for (team in teams) {
-                foo.add(team.name)
-            }
-            var teamNames: Array<String> = foo.toTypedArray()
 
-            builder.setMultiChoiceItems(teamNames, null
-            ) { dialog, which, isChecked ->
-                if (isChecked) {
-                    selectedList.add(which)
-                } else if (selectedList.contains(which)) {
-                    selectedList.remove(Integer.valueOf(which))
+            if (teams.isNotEmpty()) {
+                for (team in teams) {
+                    foo.add(team.name)
                 }
-            }
+                val teamNames: Array<String> = foo.toTypedArray()
 
-            builder.setPositiveButton("DONE") { dialogInterface, i ->
-                val selectedStrings = ArrayList<String>()
-
-                for (j in selectedList.indices) {
-                    selectedStrings.add(teamNames[selectedList[j]])
+                builder.setMultiChoiceItems(
+                    teamNames, null
+                ) { dialog, which, isChecked ->
+                    if (isChecked) {
+                        selectedList.add(which)
+                    } else if (selectedList.contains(which)) {
+                        selectedList.remove(Integer.valueOf(which))
+                    }
                 }
 
-                Toast.makeText(applicationContext, "Items selected are: " + Arrays.toString(selectedStrings.toTypedArray()), Toast.LENGTH_SHORT).show()
-                for (team in selectedStrings) {
-                    TeamJSONStore(applicationContext).findOne(team)
-                        ?.let { it1 -> selectedTeams.add(it1) }
-                }
-            }
+                builder.setPositiveButton("ADD") { dialogInterface, i ->
+                    val selectedStrings = ArrayList<String>()
 
-            builder.show()
+                    for (j in selectedList.indices) {
+                        selectedStrings.add(teamNames[selectedList[j]])
+                    }
+                    for (team in selectedStrings) {
+                        val asd = TeamJSONStore(applicationContext).findOne(team)
+                        if (asd != null) {
+                            selectedTeams.add(asd)
+                        }
+                    }
+
+                    Toast.makeText(
+                        applicationContext,
+                        "Items selected are: " + Arrays.toString(selectedStrings.toTypedArray()),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                builder.show()
+            }
         }
 
         if (intent.hasExtra("tournament_edit")) {
