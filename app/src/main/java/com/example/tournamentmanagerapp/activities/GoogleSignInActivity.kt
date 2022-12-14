@@ -39,6 +39,7 @@ class GoogleSignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val view = LayoutInflater.from(this).inflate(R.layout.activity_login, null)
         setContentView(view)
         app = application as MainApp
